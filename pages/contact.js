@@ -65,21 +65,21 @@ export default function Contact({ siteconfig }) {
             <div className="mt-5">
               <div className="flex items-center mt-2 space-x-2 text-dark-600 dark:text-gray-400">
                 <LocationMarkerIcon className="w-4 h-4" />
-                <span>1734 Sanfransico, CA 93063</span>
+                <span>1453 Rize, TR 535353</span>
               </div>
               {siteconfig?.email && (
                 <div className="flex items-center mt-2 space-x-2 text-dark-600 dark:text-gray-400">
                   <MailIcon className="w-4 h-4" />
-                  <a href={`mailto:${siteconfig.email}`}>
-                    {siteconfig.email}
+                  <a href={`mailto:mehmetmelihsargin@gmail.com`}>
+                    falanfilan@gmail.com
                   </a>
                 </div>
               )}
               {siteconfig?.phone && (
                 <div className="flex items-center mt-2 space-x-2 text-dark-600 dark:text-gray-400">
                   <PhoneIcon className="w-4 h-4" />
-                  <a href={`tel:${siteconfig.phone}`}>
-                    {siteconfig.phone}
+                  <a href={`tel:05524805377`}>
+                    0552 480 53 77
                   </a>
                 </div>
               )}
@@ -99,11 +99,10 @@ export default function Contact({ siteconfig }) {
                   type="text"
                   placeholder="Full Name"
                   autoComplete="false"
-                  className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white rounded-md outline-none dark:placeholder:text-gray-200 dark:bg-gray-900   focus:ring-4  ${
-                    errors.name
-                      ? "border-red-600 focus:border-red-600 ring-red-100 dark:ring-0"
-                      : "border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0"
-                  }`}
+                  className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white rounded-md outline-none dark:placeholder:text-gray-200 dark:bg-gray-900   focus:ring-4  ${errors.name
+                    ? "border-red-600 focus:border-red-600 ring-red-100 dark:ring-0"
+                    : "border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0"
+                    }`}
                   {...register("name", {
                     required: "Full name is required",
                     maxLength: 80
@@ -126,11 +125,10 @@ export default function Contact({ siteconfig }) {
                   placeholder="Email Address"
                   name="email"
                   autoComplete="false"
-                  className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white rounded-md outline-none dark:placeholder:text-gray-200 dark:bg-gray-900   focus:ring-4  ${
-                    errors.email
-                      ? "border-red-600 focus:border-red-600 ring-red-100 dark:ring-0"
-                      : "border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0"
-                  }`}
+                  className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white rounded-md outline-none dark:placeholder:text-gray-200 dark:bg-gray-900   focus:ring-4  ${errors.email
+                    ? "border-red-600 focus:border-red-600 ring-red-100 dark:ring-0"
+                    : "border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0"
+                    }`}
                   {...register("email", {
                     required: "Enter your email",
                     pattern: {
@@ -150,11 +148,10 @@ export default function Contact({ siteconfig }) {
                 <textarea
                   name="message"
                   placeholder="Your Message"
-                  className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white dark:placeholder:text-gray-200 dark:bg-gray-900   rounded-md outline-none  h-36 focus:ring-4  ${
-                    errors.message
-                      ? "border-red-600 focus:border-red-600 ring-red-100 dark:ring-0"
-                      : "border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0"
-                  }`}
+                  className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white dark:placeholder:text-gray-200 dark:bg-gray-900   rounded-md outline-none  h-36 focus:ring-4  ${errors.message
+                    ? "border-red-600 focus:border-red-600 ring-red-100 dark:ring-0"
+                    : "border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0"
+                    }`}
                   {...register("message", {
                     required: "Enter your Message"
                   })}
