@@ -23,10 +23,16 @@ export default function Post(props) {
   //console.log(router.query.category);
 
 
-
+  const options = {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer 00D8d000006v4Eu!AQ8AQFgUiG1fiOy0Hjy25Gr18eQChlS1lXLX9E8w7q0UyMeANo1.bSmbTFQy8yNHJt5emiAJLWW44x8_J_Imz50JXKZ4G5jE`
+    }
+  }
   const data1 = async () => {
 
-    const info = await fetch('https://fakestoreapi.com/products')
+    const info = await fetch('https://mms2-dev-ed.my.salesforce.com/services/apexrest/Portfolio', options)
       .then(res => res.json())
       .then(json => {
         console.log('json', json)
@@ -58,7 +64,7 @@ export default function Post(props) {
     <>
       {posts && siteConfig && (
         <Layout {...siteConfig}>
-          <NextSeo
+          {/* <NextSeo
             title={`${siteConfig?.title}`}
             description={siteConfig?.description || ""}
             canonical={siteConfig?.url}
@@ -79,9 +85,9 @@ export default function Post(props) {
             twitter={{
               cardType: "summary_large_image"
             }}
-          />
+          /> */}
           <Container>
-            <div className="grid gap-10 lg:gap-10 md:grid-cols-2 ">
+            <div className="grid  gap-10 lg:gap-10 grid-cols-3 ">
               {datas ? datas.map(post => (
                 <div key={post.id} className="cursor-pointer group">
                   <div
@@ -91,7 +97,7 @@ export default function Post(props) {
                     )}>
                     <Link href={`https://github.com/MmSARGIN`}>
                       <a>
-                        <Image src={post.image} alt='melih' width={500} height={600} loader={myLoader}>
+                        <Image className="flex" src={post.Images__c} alt='melih' width={500} height={600} loader={myLoader}>
 
                         </Image>
                         {/* <img src={post.image} alt="melih">
@@ -130,7 +136,21 @@ export default function Post(props) {
               transition-[background-size]
               duration-500
               hover:bg-[length:100%_3px] group-hover:bg-[length:100%_10px]">
-                      {post.title}
+                      {post.Name}
+                    </span>
+
+                  </h2>
+                  <h2 className="mt-2 text-lg font-semibold tracking-normal text-brand-primary dark:text-white">
+
+                    <span
+                      className="     bg-gradient-to-r from-green-200 to-green-100 dark:from-purple-800 dark:to-purple-900
+              bg-[length:0px_10px]
+              bg-left-bottom
+              bg-no-repeat
+              transition-[background-size]
+              duration-500
+              hover:bg-[length:100%_3px] group-hover:bg-[length:100%_10px]">
+                      {post.Description__c}
                     </span>
 
                   </h2>
