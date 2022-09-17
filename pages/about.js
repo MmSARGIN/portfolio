@@ -14,7 +14,7 @@ export default function About({ authors, siteconfig }) {
           About
         </h1>
         <div className="text-center">
-          <p className="text-lg">We are a small passionate team.</p>
+          <p className="text-lg">Mehmet Melih SARGIN</p>
         </div>
 
         {/* <div className="grid grid-cols-3 gap-5 mt-6 mb-16 md:mt-16 md:mb-32 md:gap-16">
@@ -40,16 +40,7 @@ export default function About({ authors, siteconfig }) {
 
         <div className="mx-auto prose text-center dark:prose-invert mt-14">
           <p>
-            We provide real-time connectivity to enable software
-            providers and financial institutions to build integrated
-            products for their small business customers.
-          </p>
-          <p>
-            Our API infrastructure is leveraged by clients ranging
-            from lenders to corporate card providers and business
-            forecasting tools, with use cases including automatic
-            reconciliation, business dashboarding, and loan
-            decisioning.
+            Hi I am Melih. I am Front-End and Salesforce Developer. I created this website for present my projects.You can view my all projects in my Github profile. I am waiting for your good or bad comments. Thank you for all.
           </p>
           <p>
             <Link href="/contact">Get in touch</Link>

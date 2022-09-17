@@ -55,23 +55,22 @@ export default function Contact({ siteconfig }) {
         <div className="grid my-10 md:grid-cols-2">
           <div className="my-10">
             <h2 className="text-2xl font-semibold dark:text-white">
-              Contact Stablo
+              Contact Me
             </h2>
             <p className="max-w-sm mt-5">
-              Have something to say? We are here to help. Fill up the
-              form or send email or call phone.
+              Have something to say?
             </p>
 
             <div className="mt-5">
               <div className="flex items-center mt-2 space-x-2 text-dark-600 dark:text-gray-400">
                 <LocationMarkerIcon className="w-4 h-4" />
-                <span>1453 Rize, TR 535353</span>
+                <span>Turkey</span>
               </div>
               {siteconfig?.email && (
                 <div className="flex items-center mt-2 space-x-2 text-dark-600 dark:text-gray-400">
                   <MailIcon className="w-4 h-4" />
                   <a href={`mailto:mehmetmelihsargin@gmail.com`}>
-                    falanfilan@gmail.com
+                    mehmetmelihsargin@gmail.com
                   </a>
                 </div>
               )}
