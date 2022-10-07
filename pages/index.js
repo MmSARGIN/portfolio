@@ -27,7 +27,7 @@ export default function Post(props) {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': `Bearer 00D8d000006v4Eu!AQ8AQMgMRUczYrWKCUF1Q27_KgY5Xmfk9pG4xkovRDZU.RX_EgLYkYhNCjWRIlH01MrqQGSu2nFTE7A7Cvttpq0zi.C2bbJP`
+      'Authorization': `Bearer 00D8d000006v4Eu!AQ8AQOg.K_WxSVCOsKsQlOrTYHogoWQkoQrwY_YqFb3XLCucTMIPcVPlvn0k5VsBXrANeq83FoSLjsaYjzHtmwBnd6mqZ6E1`
     }
   }
   const data1 = async () => {
